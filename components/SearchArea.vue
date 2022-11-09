@@ -26,7 +26,13 @@ export default {
 <style scope>
 .search-area {
   margin-top: 64px;
-  background-image: linear-gradient(to right, rgba(3 37 65 / 80%) 0%, rgba(3 37 65 / 0%) 100%), url("../assets/background.jpeg");
+  margin-bottom: 15px;
+  background-image: linear-gradient(
+      to right,
+      rgba(3 37 65 / 80%) 0%,
+      rgba(3 37 65 / 0%) 100%
+    ),
+    url('../assets/background.jpeg');
   display: flex;
   align-items: center;
   color: white;

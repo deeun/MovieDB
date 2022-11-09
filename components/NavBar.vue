@@ -31,12 +31,11 @@ export default {
   background-color: #032541;
   color: white;
   height: 64px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 0 40px;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 10;
   transition: top 0.2s linear;
 }
@@ -44,16 +43,28 @@ export default {
 .nav ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   list-style: none;
+  padding: 0;
 }
 
 .nav-1 {
   width: 40%;
 }
 
+.nav-1 li {
+  padding-right: 15px;
+}
+
 .nav-2 {
-  width: 20%;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav-2 li {
+  min-width: max-content;
+  padding-left: 15px;
 }
 
 .lang {
@@ -63,5 +74,6 @@ export default {
   height: 26px;
   text-align: center;
   line-height: 26px;
+  font-size: 13px;
 }
 </style>
