@@ -1,68 +1,51 @@
-# moviedb
+## The Movie DB with Nuxt 🧚‍♀️
 
-## Build Setup
+The Movie DB 메인화면 클론코딩 해보기 <br/>
+(https://www.themoviedb.org/)
+
+### Build Setup
 
 ```bash
-# install dependencies
+# dependency 설치
 $ npm install
 
-# serve with hot reload at localhost:3000
+# port 3000에서 실행
 $ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+### File Tree
 
-## Special Directories
+```
+📦components
+ ┣ 📂MainPage
+ ┃ ┣ 📂Free
+ ┃ ┃ ┣ 📜FreeMovie.vue
+ ┃ ┃ ┣ 📜FreeTV.vue
+ ┃ ┃ ┗ 📜FreeWatch.vue
+ ┃ ┣ 📂Popular
+ ┃ ┃ ┣ 📜MostPopulars.vue
+ ┃ ┃ ┣ 📜PopularMovie.vue
+ ┃ ┃ ┗ 📜PopularTV.vue
+ ┃ ┣ 📂Trailer
+ ┃ ┃ ┗ 📜LatestTrailers.vue
+ ┃ ┣ 📂Trending
+ ┃ ┃ ┣ 📜TrendingToday.vue
+ ┃ ┃ ┣ 📜TrendingVids.vue
+ ┃ ┃ ┗ 📜TrendingWeek.vue
+ ┃ ┣ 📜JoinToday.vue
+ ┃ ┣ 📜MainPage.vue
+ ┃ ┗ 📜SearchArea.vue
+ ┗ 📂UI
+ ┃ ┣ 📜NavBar.vue
+ ┃ ┣ 📜PageFooter.vue
+ ┃ ┗ 📜SavedModal.vue
+```
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+### 완성 화면
+![screencapture-localhost-3000-2022-11-10-15_36_55](https://user-images.githubusercontent.com/102015738/201018660-424eb32e-d767-429c-a5ab-7c676db9caf1.png)
 
-### `assets`
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+### 추후 과제
+- 도넛 원형 차트 만들어보기
+- 반응형 미디어쿼리 적용해보기
+- 상세페이지 만들어보기
