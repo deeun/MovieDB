@@ -147,9 +147,11 @@
 </template>
 <script>
 import axios from 'axios'
+import SavedModal from '../../UI/SavedModal.vue'
 
 export default {
   name: 'LatestTrailers',
+  components: { SavedModal },
   data() {
     return {
       toggletrailerstream: true,
