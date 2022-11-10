@@ -16,7 +16,7 @@ $ npm run dev
 ```
 <br/>
 
-### File Tree
+### 🌲 File Tree
 
 ```
 📦components
@@ -45,18 +45,19 @@ $ npm run dev
 ```
 <br/>
 
-### 완성 화면
+### 🖥 완성 화면
 ![screencapture-localhost-3000-2022-11-10-15_36_55](https://user-images.githubusercontent.com/102015738/201018660-424eb32e-d767-429c-a5ab-7c676db9caf1.png)
 <br/>
+<br/>
 
-### 시연 영상 (click !)
+### 🎥 시연 영상 (click !)
 [![YOUTUBE](https://img.youtube.com/vi/vX4IrLObCMk/0.jpg)](https://www.youtube.com/watch?v=vX4IrLObCMk)
 <br/>
 https://www.youtube.com/watch?v=vX4IrLObCMk 
 <br/>
 <br/>
 
-### 추후 과제
+### ⚠️ 추후 과제
 - 도넛 원형 차트 만들어보기
 (각 미디어별 사용자 평점 부분을 도넛 차트로 표현했어야하는데 구현이 어려워서 우선은 숫자만 표기해두었음)
 - 반응형 미디어쿼리 적용해보기
@@ -64,9 +65,11 @@ https://www.youtube.com/watch?v=vX4IrLObCMk
 - 컴포넌트 재사용성 높여보기 (토글버튼 등)
 <br/>
 
-### 느낀 점
-Vue는 처음 사용해보는데 굉장히 새롭고 재밌었다. <br/>
-Nuxt 프레임워크도 낯설었지만, 이전에 리액트 프로젝트에서 사용해본 Next와 비슷해서 어느정도 사용할 수 있었다. <br/>
-v-if, v-for 등 Vue의 디렉티브 사용법이 흥미로웠다. <br/>
-vue에 더 익숙했으면 코드를 더 잘 짤 수 있었을텐데 하는 아쉬움이 남는다. <br/>
-앞으로도 계속해서 열공하기 ✏️
+### 🔍 느낀 점
+```bash
+Vue는 처음 사용해보는데 굉장히 새롭고 재밌었다.
+Nuxt 프레임워크도 낯설었지만, 이전에 리액트 프로젝트에서 사용해본 Next와 비슷해서 어느정도 사용할 수 있었다.
+v-if, v-for 등 Vue의 디렉티브 사용법이 흥미로웠다.
+vue에 더 익숙했으면 코드를 더 잘 짤 수 있었을텐데 하는 아쉬움이 남는다.
+앞으로도 계속해서 열공하기 !!
+```
