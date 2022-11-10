@@ -32,7 +32,7 @@ export default {
       rgba(3 37 65 / 80%) 0%,
       rgba(3 37 65 / 0%) 100%
     ),
-    url('../assets/background.jpeg');
+    url('../../assets/background.jpeg');
   display: flex;
   align-items: center;
   color: white;

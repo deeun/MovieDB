@@ -25,10 +25,13 @@
     "@nuxtjs/pwa": "^3.3.5",
     "chart.js": "^3.9.1",
     "core-js": "^3.25.3",
+    "lite-youtube-embed": "^0.2.0",
     "nuxt": "^2.15.8",
     "vue": "^2.7.13",
     "vue-chartjs": "^4.1.2",
-    "vue-template-compiler": "^2.7.10"
+    "vue-lite-youtube-embed": "^1.0.4",
+    "vue-template-compiler": "^2.7.10",
+    "vue-youtube": "^1.4.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",

@@ -1,54 +1,57 @@
 <template>
   <div class="wrapper">
     <div class="title">
-      <h2>What's Popular</h2>
+      <h2>Free To Watch</h2>
       <div class="toggle">
-        <div id="showtv" class="selected" @click="toggleShowTv">
-          <span>On Tv</span>
+        <div id="showfreemovie" class="selected" @click="toggleShowMovie">
+          <span>Movies</span>
         </div>
-        <div id="showmovie" class="notselected" @click="toggleShowMovie">
-          <span>In Theaters</span>
+        <div id="showfreetv" class="notselected" @click="toggleShowTv">
+          <span>TV</span>
         </div>
       </div>
     </div>
-    <div v-if="toggletv">
-      <PopularTV />
+    <div v-if="togglefreemovie">
+      <FreeMovie />
     </div>
-    <div v-if="togglemovie">
-      <PopularMovie />
+    <div v-if="togglefreetv">
+      <FreeTV />
     </div>
   </div>
 </template>
 
 <script>
+import FreeMovie from './FreeMovie.vue'
+import FreeTV from './FreeTV.vue'
+
 export default {
+  name : "FreeWatch",
   data() {
     return {
-      toggletv: true,
-      togglemovie: false,
+      togglefreemovie: true,
+      togglefreetv: false,
     }
   },
   methods: {
-    toggleShowTv() {
-      this.toggletv = true
-      this.togglemovie = false
-
-      document.getElementById('showtv').className = 'selected'
-      document.getElementById('showmovie').className = 'notselected'
-    },
     toggleShowMovie() {
-      this.toggletv = false
-      this.togglemovie = true
-
-      document.getElementById('showtv').className = 'notselected'
-      document.getElementById('showmovie').className = 'selected'
+      this.togglefreemovie = true
+      this.togglefreetv = false
+      document.getElementById('showfreemovie').className = 'selected'
+      document.getElementById('showfreetv').className = 'notselected'
+    },
+    toggleShowTv() {
+      this.togglefreemovie = false
+      this.togglefreetv = true
+      document.getElementById('showfreemovie').className = 'notselected'
+      document.getElementById('showfreetv').className = 'selected'
     },
   },
+  components: { FreeMovie, FreeTV },
 }
 </script>
 <style scoped>
 .wrapper {
-    padding: 0 40px;
+  padding: 15px 40px;
 }
 
 .title {
@@ -58,7 +61,7 @@ export default {
 }
 
 .title h2 {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .toggle {
