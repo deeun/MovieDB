@@ -1,13 +1,18 @@
 <template>
   <div class="wrapper">
-    <NavBar />
-    <SearchArea />
-    <MostPopulars />
-    <FreeWatch />
-    <LatestTrailers />
-    <TrendingVids />
-    <JoinToday />
-    <PageFooter />
+    <div v-if="!isMedia">
+      <NavBar/>
+    </div>
+    <div v-if="isMedia">
+      <NavBarMobile />
+    </div>
+    <SearchArea/>
+    <MostPopulars/>
+    <FreeWatch/>
+    <LatestTrailers/>
+    <TrendingVids/>
+    <JoinToday/>
+    <PageFooter/>
   </div>
 </template>
 <script>
@@ -19,9 +24,25 @@ import MostPopulars from './Popular/MostPopulars.vue'
 import SearchArea from './SearchArea.vue'
 import TrendingVids from './Trending/TrendingVids.vue'
 import JoinToday from './JoinToday.vue'
+import NavBarMobile from "~/components/Mobile/UI/NavBarMobile.vue";
 
 export default {
   name: 'MainPage',
-  components: { NavBar, SearchArea, MostPopulars, FreeWatch, LatestTrailers, TrendingVids, JoinToday, PageFooter },
+  components: {NavBar, SearchArea, MostPopulars, FreeWatch, LatestTrailers, TrendingVids, JoinToday, PageFooter, NavBarMobile},
+  methods: {}
 }
+</script>
+<script setup>
+const deviceWidth = window.outerWidth
+let isMedia = false
+if (deviceWidth < 800) {
+  isMedia = true
+} else {
+  isMedia = false
+}
+
+const print = () => {
+  console.log(deviceWidth)
+}
+print()
 </script>
